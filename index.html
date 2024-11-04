@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income & Expense calculator </title>
+    <link rel="icon" type="img/png" href="./img/budget.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Header section starts  -->
+     <header id="header-id" class="header-class">
+        <div class="header-container">
+            <div class="header-title">
+                <h1>Income & Expense Calculator</h1>
+            </div>
+            <div class="display-container">
+                <div class="card">
+                    <h3>Total Income</h3>
+                    <p id="income">₹0.00</p>
+                </div>
+                <div class="card">
+                    <h3>Total Expenses</h3>
+                    <p id="expense">₹0.00</p>
+                </div>
+                <div class="card">
+                    <h3>Net Balance</h3>
+                    <p id="balance">₹0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="filter-container">
+            <div class="filters-class" id="filters-id">
+                <label><input type="radio" name="filter" id="all-filter" checked>All</label>
+                <label><input type="radio" name="filter" id="income-filter">Income</label>
+                <label><input type="radio" name="filter" id="expense-filter">Expense</label>
+            </div>
+        </div>
+       
+     </header>
+    <!-- Header section starts ends -->
+
+    <!-- Main Section starts -->
+     <main id="main-id" class="main-class">
+        <div class="main-container">
+            <div class="form-container">
+                <h3 class="details-h3">Details</h3>
+                <form action="" class="form-class" id="form-transaction">
+                    <input type="text" id="description" placeholder="Enter Description">
+                    <input type="number" id="amount" placeholder="Enter Amount">
+                    <select id="type">
+                        <option value="income" id="income">Income</option>
+                        <option value="expense" id="expense">Expense</option>
+                    </select> 
+                    <div class="btn-container">
+                        <button  id="add">Add Entry</button>
+                        <button type="button" id="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="transaction-list-class" id="transaction-list-id" style="display: none;">
+                <h2>Transaction List</h2>
+                <hr>
+        
+                <table id="transaction-table">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transaction-tbody">
+                        <!-- Transaction rows will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+     </main>
+    <!-- Main Section Ends -->
+
+    <!-- footer Starts -->
+    <footer class="footer-container">
+        <p class="footer-text">&copy; 2024 Memory Game Flip Card | Developed by [ Gokul Prasath J ]</p>
+    </footer>
+
+    <!-- footer Ends -->
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
