@@ -3,7 +3,7 @@
 
 # Calculator's Deployed Link
 
-[  ]
+[ https://happybudgeting.netlify.app/ ]
 
 The Income & Expense Calculator is a web application designed to help users manage their finances by tracking income and expenses. This simple tool allows users to add, edit, and delete transactions while displaying the total income, total expenses, and the resulting net balance.
 
